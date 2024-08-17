@@ -1,0 +1,23 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+      justify-content: space-between;
+height:130px;
+  padding-top: 10px;
+  transition: transform 0.3s ease;
+
+align-items: center;
+
+  }
+  .footer.hide {
+  /* Move the footer off the screen when hidden */
+  transform: translateY(100%);
+}
+  .footer-contact {
+    text-align: left;
+  }
+  
+  /* .footer-contact p {
+    margin: 3px 0;
+  } */

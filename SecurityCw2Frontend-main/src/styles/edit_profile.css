@@ -1,0 +1,17 @@
+.pp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    height:100px;
+    width:100px
+  }
+  /* edit_profile.css or inline styles in the component */
+.min-h-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+  }
+
+  

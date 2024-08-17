@@ -1,0 +1,38 @@
+/* CSS for the sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar-open {
+    transform: translateX(0);
+  }
+  
+  /* CSS for the hamburger icon */
+  .hamburger-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .hamburger-icon .line {
+    height: 2px;
+    width: 20px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .hamburger-icon.open .line:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  
+  .hamburger-icon.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-icon.open .line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+  

@@ -1,0 +1,197 @@
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+  .tab {
+    transition: background-color 3s;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .active-tab {
+    background-color: rgb(54, 231, 54);
+    transition: background-color 3s;
+
+  }
+  
+  /* .tab {
+    background-color: rgb(54, 55, 54);
+  } */
+  
+  .topbar-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .welcome-message {
+    font-size: 14px;
+    font-weight: bold;
+    color: #168f16;
+    margin-top: -7px;
+    margin-right: -7px;
+    margin-bottom: 15px;
+  }
+  
+.topbar-username {
+    text-align: right;
+    margin-top: 10px;
+    margin-left: -30px;
+    font-size: 20px;
+    color: #333;
+  }
+  .topbar-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 40px;   }
+  
+  .topbar-icon {
+    font-size: 20px;
+    color: #168f16;
+    margin-right: 10px;
+  }
+  .main-body {
+    display: flex;
+    flex-direction: column;
+  }
+.notification-icon {
+    margin-right: 10px;
+  }
+  .profile-picture {
+    width: 30px;
+    height: 30px;
+    /* order: -1; */
+        border-radius: 50%;
+        margin-right: 5px;
+
+  }
+  .filter-btn{
+    margin:10px;
+  }
+  .filter-btn:hover {
+    background-color: #45a049;
+  }
+  .filter-group-btn{
+    margin-right:5px;
+  }
+  .filter-search-btn{
+    background: none;
+    border: none;
+  }
+  .spacer{
+    margin-bottom:10px;
+  }
+  .bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #168f16;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1;
+  }
+  /* Add these styles to your CSS or in a separate CSS file */
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .company-location-container {
+    display: flex;
+    align-items: center; /* Align items vertically in the container */
+    margin-bottom: 10px; /* Optional: Add some spacing between company and location */
+  }
+  
+  .company {
+    flex: 1; /* Grow to fill available space */
+    text-align: right; /* Align the company text to the left */
+  }
+  
+  .location {
+    flex: 1; /* Grow to fill available space */
+    /* display: flex; */
+    align-items: right; /* Align items vertically in the location container */
+  }
+  
+  .location-icon {
+    margin-right: 5px; /* Optional: Add some spacing between the location icon and text */
+  }
+  
+  .bottom-bar-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .flexible-button {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .main-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .main-button:hover {
+    background-color: #45a049;
+  }
+  
+  .expanded-buttons {
+    position: absolute;
+    top: 0;
+    right: 50;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    transition: max-height 1s, opacity 1s;
+    max-height: 0;
+    /* overflow: hidden; */
+    opacity: 0;
+  }
+  
+  .flexible-button.expanded .expanded-buttons {
+    max-height: 200px; /* Adjust the value as needed */
+    opacity: 2;
+  }
+  
+  .expanded-buttons button {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .expanded-buttons button:hover {
+    background-color: #ccc;
+  }
+  

@@ -1,0 +1,11 @@
+.tabs {
+    display: flex;
+    width: 99%;
+    align-items: center;
+
+  }
+  
+  .tab {
+    flex: 1;
+  }
+  
