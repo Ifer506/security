@@ -1,4 +1,4 @@
-import { ClockCircleOutlined, EnvironmentOutlined } from "@ant-design/icons";
+// import { ClockCircleOutlined, EnvironmentOutlined } from "@ant-design/icons";
 import { Card } from "antd";
 import { AiOutlineDelete } from "react-icons/ai";
 import { BsBookmark, BsBookmarkFill } from "react-icons/bs";
@@ -40,13 +40,13 @@ export const getCard = ({
           <div class="text-lg font">{jobName}</div>
           <div className="location">
             <span className="location-icon">
-              <EnvironmentOutlined />
+              {/* <EnvironmentOutlined /> */}
             </span>
             <div class="text-sm font-bold">{location}</div>
           </div>
           <div className="time">
             <span className="clock-icon">
-              <ClockCircleOutlined />
+              {/* <ClockCircleOutlined /> */}
             </span>
             <div class="text-sm font-bold">{time}</div>
           </div>
@@ -56,7 +56,7 @@ export const getCard = ({
             class="btn btn-sm"
             onClick={() => window.deleteByAdmin.showModal()}
           >
-            <AiOutlineDelete />
+            {/* <AiOutlineDelete /> */}
           </button>
         )}
 
@@ -108,13 +108,13 @@ export const GetCreatedCard = ({
           <div className="text-lg font">{jobName}</div>
           <div className="location">
             <span className="location-icon">
-              <EnvironmentOutlined />
+              {/* <EnvironmentOutlined /> */}
             </span>
             <div className="text-sm font-bold">{location}</div>
           </div>
           <div className="time">
             <span className="clock-icon">
-              <ClockCircleOutlined />
+              {/* <ClockCircleOutlined /> */}
             </span>
             <div className="text-sm font-bold">{time}</div>
           </div>
@@ -125,7 +125,7 @@ export const GetCreatedCard = ({
               class="btn btn-sm"
               onClick={() => window.deleteJobModel.showModal()}
             >
-              <AiOutlineDelete />
+              {/* <AiOutlineDelete /> */}
             </button>
           </div>
 

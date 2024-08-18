@@ -4,7 +4,6 @@ import jwtDecode from "jwt-decode";
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/edit_profile.css";
-import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 export default function EditProfile() {

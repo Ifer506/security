@@ -3,7 +3,6 @@ import axios from "axios";
 import jwtDecode from "jwt-decode";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 export default function AddJob() {

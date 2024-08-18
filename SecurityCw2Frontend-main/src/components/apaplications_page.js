@@ -5,7 +5,6 @@ import jwtDecode from "jwt-decode";
 import { React, useEffect, useState } from "react";
 import "../styles/application.css";
 import "../tailwind.css";
-import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { GetAppliedJobs, GetCreatedJobs } from "./services/GetAllJobs";
 

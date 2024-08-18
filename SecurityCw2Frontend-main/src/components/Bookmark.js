@@ -1,6 +1,5 @@
 import axios from "axios";
 import { React, useEffect, useState } from "react";
-import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { GetBookmarked } from "./services/GetAllJobs";
 

@@ -4,14 +4,16 @@ import { message } from "antd";
 import axios from "axios";
 import jwtDecode from "jwt-decode";
 import { React, useEffect, useState } from "react";
-import { AiOutlineHome } from "react-icons/ai";
-import { BsBookmark } from "react-icons/bs";
-import { IoBriefcaseOutline, IoDocumentsOutline } from "react-icons/io5";
+// import { AiOutlineHome } from "react-icons/ai";
+// import { BsBookmark } from "react-icons/bs";
+// import { IoBriefcaseOutline, IoDocumentsOutline } from "react-icons/io5";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../styles/Navbar.css";
 import "../tailwind.css";
 import { isAdmin } from "./global.js";
 import { GetAllUsers } from "./services/GetUserData";
+import logo from "../images/logo.png";
+
 
 const Navbar = ({ onSearch }) => {
   const navigate = useNavigate();
@@ -253,8 +255,8 @@ const Navbar = ({ onSearch }) => {
   }, []);
   return (
     <div>
-      <div className={`navbar bg-neutral ${menuOpen ? "menu-open" : ""}`}>
-        <div className="navbar-start">
+      <div className={`flex navbar bg-neutral ${menuOpen ? "menu-open" : ""}`}>
+        <div className="navbar-start bg neutral">
           <div className="menu-dropdown" onClick={toggleMenu}>
             <div className="dropdown-icon"></div>
             {menuOpen && (
@@ -275,7 +277,7 @@ const Navbar = ({ onSearch }) => {
                 className={`tab ${isButtonActive("/home") ? "tab-active" : ""}`}
                 onClick={() => handleButtonClick("/home")}
               >
-                <AiOutlineHome className="tab-icon" />
+                
                 <span>Home</span>
               </div>
             </Link>
@@ -286,7 +288,7 @@ const Navbar = ({ onSearch }) => {
                 }`}
                 onClick={() => handleButtonClick("/bookmark")}
               >
-                <BsBookmark className="tab-icon" />
+                
                 <span>Bookmark</span>
               </div>
             </Link>
@@ -297,7 +299,7 @@ const Navbar = ({ onSearch }) => {
                 }`}
                 onClick={() => handleButtonClick("/application")}
               >
-                <IoDocumentsOutline className="tab-icon" />
+                
                 <span>Applications</span>
               </div>
             </Link>
@@ -308,14 +310,19 @@ const Navbar = ({ onSearch }) => {
                 }`}
                 onClick={() => handleButtonClick("/addjob")}
               >
-                <IoBriefcaseOutline className="tab-icon" />
+                
                 <span> Add Job</span>
               </div>
             </Link>
           </div>
         </div>
-        <div class="navbar-center">
-          <div class="text-3xl font-bold">The Job Finder</div>
+        <div className="navbar-center">
+          <Link to="/home">
+            <img className="h-8 w-auto logo" src={logo} alt="Your Company" />
+          </Link>
+          <Link to="/home" className="text-2xl">
+            JOB JUNCTION
+          </Link>
         </div>
         <div class="navbar-end">
           <div class="form-control">

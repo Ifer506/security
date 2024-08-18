@@ -5,7 +5,6 @@ import { React, useEffect, useState } from "react";
 import { BsSearch } from "react-icons/bs";
 import "../styles/home_page.css";
 import "../tailwind.css";
-import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { GetAllJobs } from "./services/GetAllJobs";
 
